@@ -15,6 +15,7 @@
 		86435B0A22EFFE310050BD38 /* TableView_Practice_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B0922EFFE310050BD38 /* TableView_Practice_Tests.swift */; };
 		86435B1522EFFE310050BD38 /* TableView_Practice_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B1422EFFE310050BD38 /* TableView_Practice_UITests.swift */; };
 		86435B2322F006820050BD38 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B2222F006820050BD38 /* CustomCell.swift */; };
+		86435B2522F0216B0050BD38 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B2422F0216B0050BD38 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		86435B1422EFFE310050BD38 /* TableView_Practice_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_Practice_UITests.swift; sourceTree = "<group>"; };
 		86435B1622EFFE310050BD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86435B2222F006820050BD38 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		86435B2422F0216B0050BD38 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				86435AF622EFFE2F0050BD38 /* ViewController.swift */,
 				86435B2222F006820050BD38 /* CustomCell.swift */,
 				86435AF822EFFE2F0050BD38 /* Main.storyboard */,
+				86435B2422F0216B0050BD38 /* CollectionViewCell.swift */,
 				86435AFB22EFFE310050BD38 /* Assets.xcassets */,
 				86435AFD22EFFE310050BD38 /* LaunchScreen.storyboard */,
 				86435B0022EFFE310050BD38 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				86435AF722EFFE2F0050BD38 /* ViewController.swift in Sources */,
 				86435B2322F006820050BD38 /* CustomCell.swift in Sources */,
+				86435B2522F0216B0050BD38 /* CollectionViewCell.swift in Sources */,
 				86435AF522EFFE2F0050BD38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
