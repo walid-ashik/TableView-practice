@@ -26,7 +26,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        data = [CellData.init(image: UIImage(named: "img_login"), message: "Something to start of! Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of "), CellData.init(image: UIImage(named: "img_empty"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_login"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_location_illustration"), message: "Something to start of!")]
+        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.sectionInset = UIEdgeInsets.init(top: 0,left: 7,bottom: 0,right: 7)
+        layout.minimumInteritemSpacing = 5
+        layout.itemSize = CGSize(width: (self.collectionView.frame.size.width - 20)/2, height: 240)
+        
+        data = [CellData.init(image: UIImage(named: "img_login"), message: "Something to start of! Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of Something to start of "), CellData.init(image: UIImage(named: "img_empty"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_login"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_location_illustration"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_empty"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_login"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_location_illustration"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_empty"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_login"), message: "Something to start of!"), CellData.init(image: UIImage(named: "img_location_illustration"), message: "Something to start of!")]
         
     }
     
@@ -41,5 +46,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "2nd_page") as! PageTwoViewController
+        vc.text = "\(indexPath)"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
